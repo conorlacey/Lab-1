@@ -16,7 +16,8 @@ library(datasauRus)
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
+There are 1846 rows and 3 columns. The variables in the data include
+the dataset variable, x variable, and y variable.
 
 ### Exercise 2
 
