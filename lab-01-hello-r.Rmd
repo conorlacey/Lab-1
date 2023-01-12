@@ -58,6 +58,7 @@ dino_data %>%
   summarize(r = cor(x, y))
 ```
 
+The correlation of the star dataset is very similar to that of the dino dataset.
 ### Exercise 4
 
 Add code and narrative as needed.
