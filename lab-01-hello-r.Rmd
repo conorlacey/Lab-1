@@ -59,19 +59,27 @@ dino_data %>%
 ```
 
 The correlation of the star dataset is very similar to that of the dino dataset.
+
 ### Exercise 4
 
-Add code and narrative as needed.
-Note that two R chunks are given but they are not labeled.
-Use the convention from above to name them appropriately.
+Plot of the data in the circle dataset:
 
-```{r}
+```{r plot-circle}
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
 
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
-```{r}
+The correlation between `x` and `y` in the circle dataset:
 
+```{r cor-circle}
+dino_data %>%
+  summarize(r = cor(x, y))
 ```
+The correlation here is a bit bigger negative wise, but again it is about the same. In general 
+the correlations of each dataset is quite small teetering between -0.062 and -0.069.
 
 ### Exercise 5
 
